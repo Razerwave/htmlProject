@@ -9,9 +9,40 @@
 # General
 --------------------------------------------------------------*/
 @import url("test.css");
+
+.headMenu{
+  align-items: center;
+}
+
+.headerHeight{
+  height: 140px;
+}
+
+.headMargin{
+  margin-bottom: 45px;
+  margin-top: 45px;
+}
+
+.pdnHead{
+
+padding-left: 0px !important;
+}
+
 .btn{
   padding: 14px 40px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 50px;
+  }
+
+.container-fluid {
+  padding-left: 100px;
+  padding-right: 100px;
 }
+
+
 @font-face {
   font-family: NanumSquareEB;
   src: url(../fonts/NanumFontSetup_TTF_SQUARE/NanumSquareEB.ttf);
@@ -34,8 +65,7 @@
 
 html, body {
   height: 100%;
-  margin-left: 60px;
-  margin-right: 60px;
+ 
   letter-spacing: 0px;;
   
 }
@@ -312,7 +342,7 @@ div#preloader {
 # Header
 --------------------------------------------------------------*/
 #header {
-  height: 70px;
+ 
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
