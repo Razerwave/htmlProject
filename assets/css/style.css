@@ -8,8 +8,10 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-
-
+@import url("test.css");
+.btn{
+  padding: 14px 40px;
+}
 @font-face {
   font-family: NanumSquareEB;
   src: url(../fonts/NanumFontSetup_TTF_SQUARE/NanumSquareEB.ttf);
