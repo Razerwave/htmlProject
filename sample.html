@@ -46,9 +46,29 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
 
+
+
+ <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <meta
+  name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"
+/>
+<!-- Link Swiper's CSS -->  <!--+++++++++++++++++++++++++++++++++++++++++-->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper.min.css" >
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper.css" >
+
 </head>
 
 <body>
+
+
+
+  <!--+++++++++++++++++++++++++++++++++++++++++-->
+  <script  src="https://unpkg.com/swiper/js/swiper.js"> </script>
+  <script  src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+
+
+
 
 
 <header id="header" class="fixed d-flex">
@@ -100,9 +120,47 @@
       <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>        
         <div class="carousel-inner" role="listbox">
 		      <!-- 1 slide start -->
-          <div class="carousel-item active text-lg-start" style="background-image: url(assets/img/main_4.jpg)">
+
+<!--+++++++++++++++++++++++++++++++++++++++++-->
+<div class="swiper-container mySwiper">
+  <div class="swiper-wrapper " >
+    <div class="swiper-slide"><img src="assets/img/main_4.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/aboutus_1.jpg" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/biz3.png" alt=""></div>
+    <div class="swiper-slide"><img src="assets/img/biz1.jpg" alt=""></div>
+
+  </div>
+  <div class="swiper-pagination"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-button-prev"></div>
+</div>
+
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+</script>
+
+            <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!t -->
+            
+        <!--  <div class="carousel-item active text-lg-start swiper-slide img swiper-slide swiper-container body1 htmlbody1" style="background-image: url(assets/img/main_4.jpg)">-->
             <div class="carousel-container">
-              <div class="container text-lg-start">
+              <div class="container text-lg-start ">
                  <div class  ="caption-box">
                      <h3>"고객을 위하는 마음이 모여1</h3>
                      <h1>승산을 이룹니다."</h1> 
@@ -151,14 +209,14 @@
             </div>
           </div>
            3 slide end -->        
-		    </div>
+		  <!--  </div>
         <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
         <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
         </a>
         <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
         <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
         </a>
-      </div>
+      </div> -->
     </div>
   </diV>  
 </section>  
@@ -169,7 +227,7 @@
 <div id ="business" class ="container business-container">
   <div class = "row biz-area-align">
    
-    <!--
+    <!-- Before control icon
    <div class = "col-md-4 business-box">     
       <div class = "hexagon">
         <div class = "hexagon-in">
@@ -451,6 +509,14 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
 
+
+
+
+
+
+
+
+ 
 </body>
 
 </html>
