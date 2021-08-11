@@ -189,7 +189,7 @@ a:active, a:hover {
 
 body {
   background: #fff none repeat scroll 0 0;
-  color: #444;
+  color: #0dcaf0;
   font-family: 'BBTreeGB';
   font-size: 16px;
   text-align: left;
@@ -1104,7 +1104,7 @@ div#preloader {
 }
 
 .active-img-box{  
-  margin-top: 70px;
+  margin-top: 90px;
   vertical-align: middle;
   justify-content: end;
   align-items: right;
@@ -1115,12 +1115,12 @@ div#preloader {
 }
 
 .green-box{
-  margin-top: -210px;
-  margin-left: 60px;
-  z-index: -1;
-  width: 250px;
-  height: 250px;
-  background-color: #76cfe0;
+     margin-top: -160px;
+    margin-left: 60px;
+    z-index: -1;
+    width: 210px;
+    height: 210px;
+    background-color: #76cfe0;
 }
 
 /*--------------------------------------------------------------

@@ -1,23 +1,25 @@
-.ass{
-    font-style: italic;
+.ass {
+  font-style: italic;
 }
 .button {
-    background-color: rgb(255, 255, 255);
-    border: none;
-    color: rgb(0, 0, 0);
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 16px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
-        
-  }
+.butn {
+  padding: 20px;
+  background-color: blueviolet;
+}
 
-
-  .butn {
-      padding: 20px;
-      background-color: blueviolet;
-  }
+.btnfamily {
+  background-color: #3ec1d5;
+  border-color: #ffff;
+}
