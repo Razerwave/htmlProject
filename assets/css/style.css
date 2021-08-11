@@ -1057,13 +1057,6 @@ div#preloader {
   color: rgb(12, 12, 12);
 }
 
-.active-box{
-  display:inline-block;
-  -width: 50%;
-  height: 450px;
-  -border:rgba(71, 71, 71, 0.8) solid 1px;
-}
-
 .active-info{
   margin-top: 50px;
   display: flex;
@@ -1112,14 +1105,7 @@ div#preloader {
   width: 550px;
 }
 
-.green-box{
-     margin-top: -160px;
-    margin-left: 60px;
-    z-index: -1;
-    width: 210px;
-    height: 210px;
-    background-color: #76cfe0;
-}
+
 
 /*--------------------------------------------------------------
 # Blog
@@ -1655,6 +1641,8 @@ body1 {
 .swiper-container {
   width: 100%;
   height: 100%;
+ margin-bottom: 46px;
+ margin-top: 46px;
 }
 
 .swiper-slide {
@@ -1674,10 +1662,45 @@ body1 {
 
 .swiper-slide img {
   display: block;
-  width: 100%;
-  height: 100%;
+
   object-fit: cover;
   justify-content: left;
   align-items: left;
   
+}
+
+.img-slide-wrapper{
+  position: relative;
+}
+.img-slide-wrapper #imgSliderWrap{
+  position: absolute;
+  right: 0;
+  width: 100%;
+  max-width: 600px;
+  top: 50px;
+
+}
+
+
+.green-box{
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+ z-index: -1;
+ width: 210px;
+ height: 210px;
+ background-color: #76cfe0;
+}
+
+.img-slide-wrapper img
+{
+  height: 450px;
+  
+}
+
+.main-slide{
+  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }

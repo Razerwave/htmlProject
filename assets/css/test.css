@@ -33,4 +33,26 @@
     outline: none;
     width: 100%;
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
 }
+
+.homeSlide-content{
+    
+
+
+    padding-bottom: 66px;
+    padding-top: 102px;
+    padding-left: 46px;
+    padding-right: 74px;
+}
+.swiper-pagination-bullets{
+    padding-bottom: 90px;
+
+  
+}
+
+/* .swiper-pagination-bullet-active{
+    background-color: red;
+} */

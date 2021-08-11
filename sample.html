@@ -40,7 +40,6 @@
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
@@ -58,18 +57,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <!--+++++++++++++++++++++++++++++++++++++++++-->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper.min.css">
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
-
-
-
-  <!--+++++++++++++++++++++++++++++++++++++++++-->
-  <script src="https://unpkg.com/swiper/js/swiper.js"> </script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
 
 
 
@@ -133,9 +129,9 @@
             <div class="swiper-container mySwiper">
               <div class="swiper-wrapper ">
                 <div class="swiper-slide main-slide" style="background-image: url(assets/img/main_4.jpg);">
-                    <div class="slide-content">
-                      <h3>"고객을 위하는 마음이 모여1</h3>
-                    <h1>승산을 이룹니다."</h1>
+                    <div class="slide-content homeSlide-content">
+                      <h3>"고객을 위하는 마음이 모여</h3>
+                      <h1>승산을 이룹니다."</h1>
                     <h5>자연을 지키는 기업, 고객 마음을 전하는 기업,
                       미래를 움직이는 기업 승산. 고객을 위하는 마음이
                       모여 승산을 이루었습니다. 고객 곁에서 함께
@@ -162,37 +158,19 @@
                 <div class="swiper-slide"><img src="assets/img/biz1.jpg" alt=""></div>
 
               </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination swiper-pagination-bullet-active"></div>
             </div>
 
            
-            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
             <script>
               var MainSlide = new Swiper(".mySwiper", {
-                
+                pagination: {
+                  el: ".swiper-pagination"
+                },
               });
             </script>
-            <script>
-              var TextSlide = new Swiper("mySwiper", {
-                spaceBetween: 30,
             
-                navigation: {
-                  nextEl: "#next",
-                  prevEl: "#prev",
-                },
-              });
-              var ImageSlide = new Swiper("mySwiper", {
-                spaceBetween: 30,
-             
-                navigation: {
-                  nextEl: "#next",
-                  prevEl: "#prev",
-                },
-              });
-            </script>
 
             <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!t -->
 
@@ -343,53 +321,158 @@
   <div class="container active-container">
     <div class="row">
       <div class="col-md-6 active-box">
-        
         <div>
-        <div class="active1-title1">
-          <h5> ACTIVE BUSINESS</h5>
-        </div>
-        <div class="active1-title2">
-          <h1>LAKAI SANDPINE RESORT</h1>
-        </div>
-        <div class="active1-title3">
-          <p>강릉의 새로운 랜드마크로 떠오른 라카이 샌드파인은 총 객실 281실 규모의 콘도동 5개동과 호텔동 1개동,
-            리셉션동, 컨벤션 센터, 야외풀, 테마가든으로 구성된 리조트입니다. </p>
-        </div>
-        <div class="row active-info">
-          <div class="active-info-content">
-            <div class="active-icon-box"><img src="assets/img/linestyle.png"></div>
-            <p>강원도 강릉시</p>
-            <p>안현동 89-36</p>
+          <div id="textSlider" class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div>
+                  <div class="active1-title1">
+                    <h5> ACTIVE BUSINESS</h5>
+                  </div>
+                  <div class="active1-title2">
+                    <h1>LAKAI SANDPINE RESORT</h1>
+                  </div>
+                  <div class="active1-title3">
+                    <p>강릉의 새로운 랜드마크로 떠오른 라카이 샌드파인은 총 객실 281실 규모의 콘도동 5개동과 호텔동 1개동,
+                      리셉션동, 컨벤션 센터, 야외풀, 테마가든으로 구성된 리조트입니다. </p>
+                  </div>
+                  <div class="row active-info">
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/linestyle.png"></div>
+                      <p>강원도 강릉시</p>
+                      <p>안현동 89-36</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xisort.png"></div>
+                      <p>관광 숙박업</p>
+                      <p>(휴양 콘도 미니엄)</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xicrop.png"></div>
+                      <p>991,740m2</p>
+                      <p>(300,000 평)</p>
+                    </div>
+                  </div>
+                  <br>
+                  <button class="btn-link-green">사업현황 &nbsp;&nbsp;&nbsp;&nbsp;-></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="active1-title1">
+                    <h5> ACTIVE BUSINESS</h5>
+                  </div>
+                  <div class="active1-title2">
+                    <h1>LAKAI SANDPINE RESORT</h1>
+                  </div>
+                  <div class="active1-title3">
+                    <p>강릉의 새로운 랜드마크로 떠오른 라카이 샌드파인은 총 객실 281실 규모의 콘도동 5개동과 호텔동 1개동,
+                      리셉션동, 컨벤션 센터, 야외풀, 테마가든으로 구성된 리조트입니다. </p>
+                  </div>
+                  <div class="row active-info">
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/linestyle.png"></div>
+                      <p>강원도 강릉시</p>
+                      <p>안현동 89-36</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xisort.png"></div>
+                      <p>관광 숙박업</p>
+                      <p>(휴양 콘도 미니엄)</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xicrop.png"></div>
+                      <p>991,740m2</p>
+                      <p>(300,000 평)</p>
+                    </div>
+                  </div>
+                  <br>
+                  <button class="btn-link-green">사업현황 &nbsp;&nbsp;&nbsp;&nbsp;-></button>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div>
+                  <div class="active1-title1">
+                    <h5> ACTIVE BUSINESS</h5>
+                  </div>
+                  <div class="active1-title2">
+                    <h1>LAKAI SANDPINE RESORT</h1>
+                  </div>
+                  <div class="active1-title3">
+                    <p>강릉의 새로운 랜드마크로 떠오른 라카이 샌드파인은 총 객실 281실 규모의 콘도동 5개동과 호텔동 1개동,
+                      리셉션동, 컨벤션 센터, 야외풀, 테마가든으로 구성된 리조트입니다. </p>
+                  </div>
+                  <div class="row active-info">
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/linestyle.png"></div>
+                      <p>강원도 강릉시</p>
+                      <p>안현동 89-36</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xisort.png"></div>
+                      <p>관광 숙박업</p>
+                      <p>(휴양 콘도 미니엄)</p>
+                    </div>
+                    <div class="active-info-content">
+                      <div class="active-icon-box"><img src="assets/img/xicrop.png"></div>
+                      <p>991,740m2</p>
+                      <p>(300,000 평)</p>
+                    </div>
+                  </div>
+                  <br>
+                  <button class="btn-link-green">사업현황 &nbsp;&nbsp;&nbsp;&nbsp;-></button>
+                </div>
+              </div>
+            </div>
+            
           </div>
-          <div class="active-info-content">
-            <div class="active-icon-box"><img src="assets/img/xisort.png"></div>
-            <p>관광 숙박업</p>
-            <p>(휴양 콘도 미니엄)</p>
-          </div>
-          <div class="active-info-content">
-            <div class="active-icon-box"><img src="assets/img/xicrop.png"></div>
-            <p>991,740m2</p>
-            <p>(300,000 평)</p>
-          </div>
         </div>
-        <br>
-        <form class="btn-link-green">사업현황 &nbsp;&nbsp;&nbsp;&nbsp;-></form>
-
-        </div>
-        <button id="prev slide-btn-prev-next" img src="assets/img/key.png" ></button>
-        <button id="next slide-btn-prev-next" img src="assets/img/key.png"></button>
-        
-        <img src="assets/img/key.png">
+        <button id="prevBtn" onclick="prevSlide()">
+          <img src="assets/img/key.png">
+        </button>
+        <button id="nextBtn" onclick="nextSlide()">
+          <img src="assets/img/key.png">
+        </button>
       </div>
-
-               
-                       <div class="col-md-6 active-box">
-                       <div class="active-img-box">
-                       <img src="assets/img/lakai.png">
-               
-        
+      <div class="col-md-6 img-slide-wrapper">
+       <div id="imgSliderWrap">
+        <div class="swiper-container" id="imgSlider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="assets/img/test1.jpg" alt=""></div>
+          </div>
+          
+        </div>
+        <div class="green-box"></div>
+       </div>
+       </div>
+      </div>
      
-        <div class="green-box"></div> </div>
+     
+      
+      
+      <script>
+        var textSlider = new Swiper("#textSlider",{
+          loop:true
+        })
+        var imgSlider = new Swiper("#imgSlider",{
+          loop:true,
+          width: 600  
+        })
+
+        function prevSlide(){
+          textSlider.slidePrev()
+          imgSlider.slidePrev()
+
+        }
+        function nextSlide(){
+          textSlider.slideNext()
+          imgSlider.slideNext()
+
+        }
+      </script>
+    </div>   
+
+      
   
       </div>
     </div>
@@ -558,7 +641,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
