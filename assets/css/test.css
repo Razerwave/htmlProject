@@ -28,3 +28,9 @@
       background-color: blueviolet;
   }
 
+.slide-btn-prev-next{
+    border: none;
+    outline: none;
+    width: 100%;
+    cursor: pointer;
+}
