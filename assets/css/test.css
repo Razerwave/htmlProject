@@ -21,34 +21,29 @@
 
 .btnfamily {
   background-color: #3ec1d5;
-  border-color: #ffff;
+  border-color: #76cfe0;
 }
-  .butn {
-      padding: 20px;
-      background-color: blueviolet;
-  }
-
-.slide-btn-prev-next{
-    border: none;
-    outline: none;
-    width: 100%;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
+.butn {
+  padding: 20px;
+  background-color: blueviolet;
 }
 
-.homeSlide-content{
-    
-
-
-    padding-bottom: 66px;
-    padding-top: 102px;
-    padding-left: 46px;
-    padding-right: 74px;
-}
-.swiper-pagination-bullets{
-    padding-bottom: 90px;
-      
+.slide-btn-prev-next {
+  border: none;
+  outline: none;
+  width: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 16px;
 }
 
+.homeSlide-content {
+  padding-bottom: 66px;
+  padding-top: 102px;
+  padding-left: 46px;
+  padding-right: 74px;
+}
+.swiper-pagination-bullets {
+  padding-bottom: 90px;
+}
