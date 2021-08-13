@@ -1,54 +1,63 @@
 .ass {
-  font-style: italic;
+          font-style: italic;
 }
 .button {
-  background-color: rgb(255, 255, 255);
-  border: none;
-  color: rgb(0, 0, 0);
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
+          background-color: rgb(255, 255, 255);
+          border: none;
+          color: rgb(0, 0, 0);
+          padding: 10px 20px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          margin: 4px 2px;
+          cursor: pointer;
+          border-radius: 16px;
 }
 
 .butn {
-  padding: 20px;
-  background-color: blueviolet;
+          padding: 20px;
+          background-color: blueviolet;
 }
 
 .btnfamily {
-  background-color: #3ec1d5;
-  border-color: #ffff;
+          background-color: #3ec1d5;
+          border-color: #ffff;
 }
-  .butn {
-      padding: 20px;
-      background-color: blueviolet;
-  }
-
-.slide-btn-prev-next{
-    border: none;
-    outline: none;
-    width: 100%;
-    cursor: pointer;
-    text-decoration: none;
-    text-align: center;
-    font-size: 16px;
+.butn {
+          padding: 20px;
+          background-color: blueviolet;
 }
 
-.homeSlide-content{
-    
+.slide-btn-prev-next {
+          border: none;
+          outline: none;
 
+          cursor: pointer;
+          text-decoration: none;
+          text-align: center;
+          align-items: baseline;
+          display: inline-block;
 
-    padding-bottom: 66px;
-    padding-top: 102px;
-    padding-left: 46px;
-    padding-right: 74px;
+          padding: 0px;
+          color: #fff;
+
+          text-align: center;
 }
-.swiper-pagination-bullets{
-    padding-bottom: 90px;
-      
-}
 
+.homeSlide-content {
+          padding-bottom: 66px;
+          padding-top: 102px;
+          padding-left: 46px;
+          padding-right: 74px;
+}
+.swiper-pagination-bullets {
+          padding-bottom: 110px;
+}
+.swiper-pagination-bullet {
+          width: 12px !important;
+          height: 12px !important;
+          background: white !important;
+}
+.swiper-pagination-bullet-active {
+          background: #d12b16 !important;
+}

@@ -58,10 +58,10 @@
   <!-- Link Swiper's CSS -->
   <!--+++++++++++++++++++++++++++++++++++++++++-->
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
-<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -126,12 +126,12 @@
             <!-- 1 slide start -->
 
             <!--+++++++++++++++++++++++++++++++++++++++++-->
-            <div class="swiper-container mySwiper">
+            <div class="swiper-container-header mySwiper">
               <div class="swiper-wrapper ">
                 <div class="swiper-slide main-slide" style="background-image: url(assets/img/main_4.jpg);">
-                    <div class="slide-content homeSlide-content">
-                      <h3>"고객을 위하는 마음이 모여</h3>
-                      <h1>승산을 이룹니다."</h1>
+                  <div class="slide-content homeSlide-content">
+                    <h3>"고객을 위하는 마음이 모여</h3>
+                    <h1>승산을 이룹니다."</h1>
                     <h5>자연을 지키는 기업, 고객 마음을 전하는 기업,
                       미래를 움직이는 기업 승산. 고객을 위하는 마음이
                       모여 승산을 이루었습니다. 고객 곁에서 함께
@@ -139,29 +139,31 @@
                     <br></br>
 
                     <button class="button btn"><b>About Us</b></button>
-                    </div>
-                </div>
-                <div class="swiper-slide main-slide " style= "background-image: url(assets/img/aboutus_1.jpg)">
-                  <div class="slide-content homeSlide-content">
-                    <h3>"고객을 위하는 마음이 모여1</h3>
-                  <h1>승산을 이룹니다."</h1>
-                  <h5>자연을 지키는 기업, 고객 마음을 전하는 기업,
-                    미래를 움직이는 기업 승산. 고객을 위하는 마음이
-                    모여 승산을 이루었습니다. 고객 곁에서 함께
-                    하겠습니다. </h5>
-                  <br></br>
-
-                  <button class="button btn"><b>About Us</b></button>
                   </div>
                 </div>
-                <div class="swiper-slide"><img src="assets/img/biz3.png" alt=""></div>
+                <div class="swiper-slide main-slide " style="background-image: url(assets/img/aboutus_1.jpg)">
+                  <div class="slide-content homeSlide-content">
+                    <h3>"고객을 위하는 마음이 모여1</h3>
+                    <h1>승산을 이룹니다."</h1>
+                    <h5>자연을 지키는 기업, 고객 마음을 전하는 기업,
+                      미래를 움직이는 기업 승산. 고객을 위하는 마음이
+                      모여 승산을 이루었습니다. 고객 곁에서 함께
+                      하겠습니다. </h5>
+                    <br></br>
+
+                    <button class="button btn"><b>About Us</b></button>
+                  </div>
+                </div>
+                <div class="swiper-slide"><img src="assets/img/test1.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="assets/img/biz1.jpg" alt=""></div>
 
               </div>
-              <div class="swiper-pagination "><H1>rrr</H1></div>
+              <div class="swiper-pagination ">
+                <H1>rrr</H1>
+              </div>
             </div>
 
-           
+
 
             <script>
               var MainSlide = new Swiper(".mySwiper", {
@@ -170,7 +172,7 @@
                 },
               });
             </script>
-            
+
 
             <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!t -->
 
@@ -424,58 +426,60 @@
                 </div>
               </div>
             </div>
-            
+
           </div>
         </div>
-        <button id="prevBtn" onclick="prevSlide()">
-          <img src="assets/img/key.png">
-        </button>
-        <button id="nextBtn" onclick="nextSlide()">
-          <img src="assets/img/key.png">
-        </button>
+        <div class="d-flex">
+          <button class="slide-btn-prev-next" id="prevBtn" onclick="prevSlide()">
+            <img src="assets/img/key2.png">
+          </button>
+          <button class="slide-btn-prev-next" id="nextBtn" onclick="nextSlide()">
+            <img src="assets/img/key1.png">
+          </button>
+        </div>
       </div>
       <div class="col-md-6 img-slide-wrapper">
-       <div id="imgSliderWrap">
-        <div class="swiper-container" id="imgSlider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="assets/img/test1.jpg" alt=""></div>
+        <div id="imgSliderWrap">
+          <div class="swiper-container" id="imgSlider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="assets/img/test1.jpg" alt=""></div>
+            </div>
+
           </div>
-          
+          <div class="green-box"></div>
         </div>
-        <div class="green-box"></div>
-       </div>
-       </div>
-      </div>
-     
-     
-      
-      
-      <script>
-        var textSlider = new Swiper("#textSlider",{
-          loop:true
-        })
-        var imgSlider = new Swiper("#imgSlider",{
-          loop:true,
-          width: 600  
-        })
-
-        function prevSlide(){
-          textSlider.slidePrev()
-          imgSlider.slidePrev()
-
-        }
-        function nextSlide(){
-          textSlider.slideNext()
-          imgSlider.slideNext()
-
-        }
-      </script>
-    </div>   
-
-      
-  
       </div>
     </div>
+
+
+
+
+    <script>
+      var textSlider = new Swiper("#textSlider", {
+        loop: true
+      })
+      var imgSlider = new Swiper("#imgSlider", {
+        loop: true,
+        width: 600
+      })
+
+      function prevSlide() {
+        textSlider.slidePrev()
+        imgSlider.slidePrev()
+
+      }
+      function nextSlide() {
+        textSlider.slideNext()
+        imgSlider.slideNext()
+
+      }
+    </script>
+  </div>
+
+
+
+  </div>
+  </div>
   </div>
 
   <br><br><br> <br><br>
