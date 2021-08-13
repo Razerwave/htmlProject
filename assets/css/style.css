@@ -31,9 +31,8 @@
   padding: 14px 40px;
   padding-left: 45px;
   padding-right: 45px;
-  padding-top: 20px;
-  padding-bottom: 20px;
   border-radius: 7px;
+  background-color white
 }
 
 .container-fluid {
@@ -1697,4 +1696,7 @@ body1 {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+h1{
+  font-size: 48px;
 }
